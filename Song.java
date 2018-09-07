@@ -2,11 +2,11 @@
  ***********************************************************************
  * REVISION HISTORY (newest first)
  **********************************************************************
- *
+ * 09/09/2018 - jacobmcintire - edited toString() to remove \n per Prof Applin
  * 8/22/2018 - Cody Snow filled out methods, conducted testing
  * 2018 - Cody Snow and Jacob McIntire completed this class for CSCI 290
  * 2016 - Anne Applin - formatting and JavaDoc skeletons added
- * 2015 - Prof. Bob Boothe - Starting code and main for testing
+ * 2015 - Prof Bob Boothe - Starting code and main for testing
  ************************************************************************
  * Song class to hold strings for a song's artist, title, and lyrics
  * Do not add any methods for part 1, just implement the ones that are
@@ -78,7 +78,7 @@ public class Song implements Comparable<Song> {
         StringBuilder str = new StringBuilder();
         // format required: artist, "title"
         str.append(artist).append(", \"");
-        str.append(title).append("\"\n");
+        str.append(title).append("\"");
         return str.toString();
     }
 
