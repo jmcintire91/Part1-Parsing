@@ -2,7 +2,7 @@
  ***********************************************************************
  * REVISION HISTORY (newest first)
  **********************************************************************
- * 09/09/2018 - jacobmcintire - edited toString() to remove \n per Prof Applin
+ * 9/09/2018 - jacobmcintire - edited toString() to remove \n per Prof Applin
  * 8/22/2018 - Cody Snow filled out methods, conducted testing
  * 2018 - Cody Snow and Jacob McIntire completed this class for CSCI 290
  * 2016 - Anne Applin - formatting and JavaDoc skeletons added
@@ -18,8 +18,9 @@ import java.util.*;
 
 /**
  *
- * @author codyssnow
  * @author boothe
+ * @author codyssnow
+ * @author jacobmmcintire
  */
 public class Song implements Comparable<Song> {
     // fields

@@ -4,6 +4,10 @@ package student;
  ***********************************************************************
  * REVISION HISTORY (newest first)
  * *********************************************************************
+ * 9/07/2018 - jacobmmcintire - finished unit test in main
+ * 9/06/2018 - jacobmmcintire - added sorting to songs array
+ * 9/06/2018 - codyssnow - fixed issue parsing file
+ * 9/06/2018 - jacobmmcintire - cont work on parsing file
  * 9/03/2018 - codyssnow - went over JM's code, identified error with parsing
  * file and finding quotation mark Pending JM's proofreading
  * 9/03/2018 - jacobmcintire - cont work on parsing file 
@@ -31,6 +35,8 @@ import java.util.stream.Stream;
  * The driver for the song database application.
  *
  * @author boothe
+ * @author codyssnow
+ * @author jakemcintire
  */
 public class SongCollection {
 
@@ -43,21 +49,12 @@ public class SongCollection {
      * precompiled classes and I/O is OS and Machine dependent and therefore not
      * portable. Java runs on a virtual machine that IS portable. So this is
      * permissable because we are programming in Java.
-     *
-     * @author codyssnow
-     * @author jakemcintire
-     *
+     * 
+     * Driver for the program
      * @param filename The path and filename to the datafile that we are using
      * must be set in the Project Properties as an argument.
      */
     public SongCollection(String filename) {
-
-        // use a try catch block
-        // read in the song file and build the songs array
-        // you must use a StringBuilder to read in the lyrics!
-        // you must add the line feed at the end of each lyric line.
-        // sort the songs array using Array.sort (see the Java API)
-        // create/initialize songList object
         ArrayList<Song> songList = new ArrayList<>();
         String artist;
         String title;
